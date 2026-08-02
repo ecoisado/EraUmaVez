@@ -32,7 +32,7 @@ if instance_exists(o_player)
         });
     } 
     
-    if global.indice_atual == 2 && global.escolha == 1
+    if global.indice_atual == 2
     {
         typist.function_on_complete(function (_txt, typist)
         {
@@ -43,6 +43,19 @@ if instance_exists(o_player)
     
     if global.indice_atual == 3
     {
-        InsereTexto("testando indice 3", 0)
+        typist.function_on_complete(function (_txt, typist)
+        {
+            o_player.ChamandoFuncao()
+        });
+        
+    }
+    
+    if global.indice_atual == 4
+    {
+        typist.function_on_complete(function (_txt, typist)
+        {
+            o_player.ChamandoFuncao()
+        });
+        
     }
 }
