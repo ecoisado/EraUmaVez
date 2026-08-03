@@ -52,10 +52,6 @@ if instance_exists(o_player)
     
     if global.indice_atual == 4
     {
-        typist.function_on_complete(function (_txt, typist)
-        {
-            o_player.ChamandoFuncao()
-        });
-        
+         
     }
 }

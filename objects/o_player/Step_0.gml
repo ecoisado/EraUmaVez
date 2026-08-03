@@ -23,5 +23,6 @@ if keyboard_check_pressed(vk_escape)
     global.texto = ["", ""]
     global.indice_atual = 0
     global.clicou = 0
+    global.slot = ["", "", "", "", "", "", "", "", "", ""]
     game_restart()
 }

@@ -13,3 +13,5 @@ function InsereTexto(_txt = "nada", _add_indice = 0)
         if _add_indice global.indice_atual++
     } 
 }
+
+global.slot = ["", "", "", "", "", "", "", "", "", ""]

@@ -1,14 +1,14 @@
 pos1_x = 45
 pos2_x = pos1_x + 45
 posY = 35
-MostrandoImagem = function()
+MostrandoImagem = function(_layer = "Objetos", _obj = o_lampada)
 {
     if !global.clicou
     {
-        var _lamp = instance_create_layer(pos1_x, posY, "Objetos", o_lampada)
-        _lamp.image_index = 1 
-        _lamp = instance_create_layer(pos2_x, posY, "Objetos", o_lampada)
-        _lamp.image_index = 2
+        var _lamp = instance_create_layer(pos1_x, posY, _layer, _obj)
+        _lamp.image_index = 0 
+        _lamp = instance_create_layer(pos2_x, posY, _layer, _obj)
+        _lamp.image_index = 1
     }
 }
 
@@ -25,7 +25,7 @@ ChamandoFuncao = function()
         break	
     
         case 2:
-            if global.escolha == 1 
+            if global.escolha == 0 
             {
                 instance_create_layer(room_width/2, room_height/2, "Iluminacao", o_claridao)
             }
@@ -37,12 +37,20 @@ ChamandoFuncao = function()
     
         case 3:
             global.clicou = 0
-            InsereTexto("????", 1)
+            if global.escolha == 1 
+            {
+                MostrandoImagem("Legendas", o_resposta)
+            }
+            else 
+            {
+                MostrandoImagem("Objetos", o_cafe)	
+            }
+                
         break
     
         case 4:
-            var _resp1 = instance_create_layer(pos1_x, posY, "Legendas", o_sim)  
-            var _resp2 = instance_create_layer(pos2_x, posY, "Legendas", o_nao)
+            //var _resp1 = instance_create_layer(pos1_x, posY, "Legendas", o_sim)  
+            //var _resp2 = instance_create_layer(pos2_x, posY, "Legendas", o_nao)
         break
     }
 }

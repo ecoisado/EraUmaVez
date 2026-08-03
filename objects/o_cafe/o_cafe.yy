@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"o_resposta",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"o_cafe",
+  "eventList":[],
   "managed":true,
-  "name":"o_resposta",
+  "name":"o_cafe",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_sim",
-    "path":"sprites/s_sim/s_sim.yy",
+    "name":"s_cafe",
+    "path":"sprites/s_cafe/s_cafe.yy",
   },
   "spriteMaskId":null,
   "visible":true,

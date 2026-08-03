@@ -1,12 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"o_sim",
+  "%Name":"o_icones",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_sim",
+  "name":"o_icones",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"s_sim",
-    "path":"sprites/s_sim/s_sim.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
