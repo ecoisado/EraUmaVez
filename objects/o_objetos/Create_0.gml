@@ -1,6 +1,8 @@
 entrou = 0
 escolha = 0
 inclina = 0
+escala_entrando = 1.4
+escala_saindo = 1
 
 PassandoMouse = function(_inclina = inclina)
 {
@@ -9,14 +11,14 @@ PassandoMouse = function(_inclina = inclina)
         if !entrou
         {
             entrou = 1
-            tween(id, "image_xscale", 1.4, tween_animation.elastic, 40)
-            tween(id, "image_yscale", 1.4, tween_animation.elastic, 40) 
+            tween(id, "image_xscale", escala_entrando, tween_animation.elastic, 40)
+            tween(id, "image_yscale", escala_entrando, tween_animation.elastic, 40) 
             if _inclina tween(id, "image_angle", 45, tween_animation.back, 40)
         }
         else 
         {
-        	tween(id, "image_xscale", 1, tween_animation.elastic, 40)
-            tween(id, "image_yscale", 1, tween_animation.elastic, 40)
+        	tween(id, "image_xscale", escala_saindo, tween_animation.elastic, 40)
+            tween(id, "image_yscale", escala_saindo, tween_animation.elastic, 40)
             if _inclina tween(id, "image_angle", 0, tween_animation.back, 40)
         } 
     }

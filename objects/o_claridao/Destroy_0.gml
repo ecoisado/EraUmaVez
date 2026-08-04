@@ -1,5 +1,5 @@
 if instance_exists(o_lampada)
 {
     instance_destroy(o_lampada)
-    InsereTexto("entao chegamos ate voce, abrindo os olhos em sua cama e decidindo entre...", 1)
+    InsereTexto("Então chegamos até o nosso personagem chamado Nosde, Ele abre os olhos em sua cama e pensa...", 1)
 }

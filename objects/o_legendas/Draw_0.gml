@@ -19,16 +19,24 @@ if keyboard_check_pressed(vk_tab) typist.skip()
 
 typist.sound_per_char(snd_legenda, 1.5, 1.8)
 
-if keyboard_check_pressed(vk_space) && global.indice_atual  < array_length(global.texto)-1 global.indice_atual++
+//if keyboard_check_pressed(vk_space) && global.indice_atual  < array_length(global.texto)-1 global.indice_atual++
 
    
 if instance_exists(o_player)
 {
-    if global.indice_atual == 1
+    if global.indice_atual == 0
     {
         typist.function_on_complete(function (_txt, typist)
         {
             o_player.ChamandoFuncao()
+        });
+    }
+    
+    if global.indice_atual == 1
+    {
+        typist.function_on_complete(function (_txt, typist)
+        {
+            o_player.ChamandoFuncao() 
         });
     } 
     
@@ -36,6 +44,7 @@ if instance_exists(o_player)
     {
         typist.function_on_complete(function (_txt, typist)
         {
+            //o_btn_avanca.ativo = 1
             o_player.ChamandoFuncao()
         });
         
@@ -45,13 +54,44 @@ if instance_exists(o_player)
     {
         typist.function_on_complete(function (_txt, typist)
         {
+            //o_btn_avanca.ativo = 1
             o_player.ChamandoFuncao()
         });
+        
         
     }
     
     if global.indice_atual == 4
     {
-         
+        instance_destroy(o_resposta)
+        typist.function_on_complete(function (_txt, typist)
+        {
+            o_player.ChamandoFuncao()
+        });
+    }
+    
+    if global.indice_atual == 5
+    {
+        typist.function_on_complete(function (_txt, typist)
+        {
+            o_player.ChamandoFuncao()
+        });
+    }
+    
+    if global.indice_atual == 6
+    {
+        
+        typist.function_on_complete(function (_txt, typist)
+        {
+            o_player.ChamandoFuncao()
+        });
+    }
+    
+    if global.indice_atual == 7
+    {
+        typist.function_on_complete(function (_txt, typist)
+        {
+            o_player.ChamandoFuncao()
+        });
     }
 }

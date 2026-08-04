@@ -8,4 +8,3 @@ inclina = 1
 
 escala_entrando = .4
 escala_saindo = .2
-

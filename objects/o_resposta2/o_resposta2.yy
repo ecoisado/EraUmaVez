@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"o_resposta",
+  "%Name":"o_resposta2",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_resposta",
+  "name":"o_resposta2",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
