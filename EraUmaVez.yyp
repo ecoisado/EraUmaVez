@@ -66,6 +66,7 @@
     {"id":{"name":"o_resposta2","path":"objects/o_resposta2/o_resposta2.yy",},},
     {"id":{"name":"obj_tween","path":"objects/obj_tween/obj_tween.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"RoomInicio","path":"rooms/RoomInicio/RoomInicio.yy",},},
     {"id":{"name":"__scribble_class_element","path":"scripts/__scribble_class_element/__scribble_class_element.yy",},},
     {"id":{"name":"__scribble_class_event","path":"scripts/__scribble_class_event/__scribble_class_event.yy",},},
     {"id":{"name":"__scribble_class_font","path":"scripts/__scribble_class_font/__scribble_class_font.yy",},},
@@ -206,6 +207,7 @@
     {"id":{"name":"s_lampada_icone","path":"sprites/s_lampada_icone/s_lampada_icone.yy",},},
     {"id":{"name":"s_lampada","path":"sprites/s_lampada/s_lampada.yy",},},
     {"id":{"name":"s_player","path":"sprites/s_player/s_player.yy",},},
+    {"id":{"name":"s_roomInicio","path":"sprites/s_roomInicio/s_roomInicio.yy",},},
     {"id":{"name":"s_sim","path":"sprites/s_sim/s_sim.yy",},},
     {"id":{"name":"scribble_fallback_bulletpoint","path":"sprites/scribble_fallback_bulletpoint/scribble_fallback_bulletpoint.yy",},},
   ],
@@ -213,6 +215,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"RoomInicio","path":"rooms/RoomInicio/RoomInicio.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

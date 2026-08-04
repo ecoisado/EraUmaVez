@@ -78,6 +78,8 @@ ChamandoFuncao = function()
                 {
                     //if global.slot[1] == 0 Ufa! ainda bem que você está aqui! relaxa as vezes a gente se perde pelo caminho mesmo...
                     if instance_exists(o_escuridao) instance_destroy(o_escuridao)
+                    InsereTexto("Enquanto isso...", 0)
+                    InsereTexto("num quarto de hotel, acabando de acordar, conhecemos nosso personagem principal, o Nosde!", 0) 
                 }
                 else 
                 {
@@ -104,8 +106,12 @@ ChamandoFuncao = function()
                     InsereTexto("ele olha pela janela e tudo parece normal!", 0)
                 }
             }
-                
-            //if global.escolha == 1 MostrandoImagem("Legendas", o_resposta2) 
+            else //if global.slot[1] == 1 Qual é mano? me dá outra chance!
+            {
+                //Vamos tentar denovo?
+                if global.slot[1] == 1 MostrandoImagem("Legendas", o_resposta2) 	
+            }  
+              
             
                
         break

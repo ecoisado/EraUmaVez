@@ -44,7 +44,7 @@ if apertou
 }
 
 
-if global.indice_atual == 8 && global.slot[8] == "" game_end()
+if global.indice_atual == 8 && global.slot[8] == "" room_goto(RoomInicio) //TROCA O GAME_END PARA TRANSICAO PRA ROOM DO LIVRO FECHANDO!
 
 
 
