@@ -73,6 +73,7 @@ if instance_exists(o_player)
     
     if global.indice_atual == 5
     {
+        instance_destroy(o_cafe)
         typist.function_on_complete(function (_txt, typist)
         {
             o_player.ChamandoFuncao()
@@ -91,6 +92,15 @@ if instance_exists(o_player)
     
     if global.indice_atual == 7
     {
+        
+        typist.function_on_complete(function (_txt, typist)
+        {
+            o_player.ChamandoFuncao()
+        });
+    }
+    if global.indice_atual == 8
+    {
+        instance_destroy(o_megafone)
         typist.function_on_complete(function (_txt, typist)
         {
             o_player.ChamandoFuncao()

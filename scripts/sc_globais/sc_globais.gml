@@ -15,3 +15,6 @@ function InsereTexto(_txt = "nada", _add_indice = 0)
 }
 
 global.slot = ["", "", "", "", "", "", "", "", "", ""]
+
+global.comecando = 0
+global.aberto = 0
