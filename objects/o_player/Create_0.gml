@@ -1,6 +1,8 @@
 pos1_x = 45
 pos2_x = pos1_x + 45
 posY = 35
+
+
 MostrandoImagem = function(_layer = "Objetos", _obj = o_lampada)
 {
     if !global.clicou
@@ -77,7 +79,7 @@ ChamandoFuncao = function()
                 if global.slot[1] == 0
                 {
                     //if global.slot[1] == 0 Ufa! ainda bem que você está aqui! relaxa as vezes a gente se perde pelo caminho mesmo...
-                    if instance_exists(o_escuridao) instance_destroy(o_escuridao)
+                    if instance_exists(o_escuridao) instance_destroy(o_escuridao) 
                     InsereTexto("Enquanto isso...", 0)
                     InsereTexto("num quarto de hotel, acabando de acordar, conhecemos nosso personagem, o Nosde!", 0) 
                 }
@@ -133,9 +135,10 @@ ChamandoFuncao = function()
             }
             else 
             {
-                InsereTexto("Adeus!", 0)
+                global.clicou = 0
                 o_btn_avanca.ativo = 1
-                
+                InsereTexto("Adeus!", 1)
+                InsereTexto("...",0 )
             }
             
         break
@@ -197,5 +200,17 @@ ChamandoFuncao = function()
                 }
             } 
         break
+        
+        case 15:
+            global.clicou = 0
+            o_btn_avanca.ativo = 1
+            InsereTexto("O Nosde deixa a meg aos cuidados de algumas pessoas que prestavam primeiros socorros e volta pra casa...", 0)    
+        break
+    
+        case 16:
+            o_btn_avanca.ativo = 1
+            InsereTexto("Quando o Nosde está entrando em casa para atender o celular, ele sente um calafrio e tem a impressão de ter ouvido alguém lhe chamando!", 0)    
+        break
     }
 }
+

@@ -1,6 +1,8 @@
+estado()
+
 if ativo
 {
-    image_index = 1    
+    //image_index = 2   
     if position_meeting(mouse_x, mouse_y, id)
     {
         entrou = 1
@@ -38,16 +40,24 @@ if ativo
 
 if apertou
 {
-    image_index = 0	
+    //image_index = 1	
     apertou = 0
     ativo = 0
 }
 
-
-if global.indice_atual == 8 && global.slot[8] == "" 
+if apertou2
 {
-    //global.comecando = 0
-    //room_goto(RoomInicio) //TROCA O GAME_END PARA TRANSICAO PRA ROOM DO LIVRO FECHANDO!
+    apertou2 = 0
+}
+
+
+if global.indice_atual == 100 && global.slot[8] == "" 
+{
+    global.comecando = 0
+    audio_group_stop_all(agMusica)
+    global.indice = 0
+    global.tocar = 0
+    room_goto(RoomInicio) //TROCA O GAME_END PARA TRANSICAO PRA ROOM DO LIVRO FECHANDO!
 }
 
 

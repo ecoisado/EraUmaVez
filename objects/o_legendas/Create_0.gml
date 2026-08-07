@@ -11,6 +11,19 @@ desenha_texto = 0
 
 me_destruir = 0
 
+skipando = function()
+{
+    typist.skip()
+}
+
+digitando = function()
+{
+    if typist.get_state() < 1
+    {
+        return true
+    }
+}
+
 iniciando = function()
 {
     image_xscale = 3

@@ -9,6 +9,8 @@ if image_alpha >= 1
     
     if !escreveu
     {
+        audio_group_stop_all(agMusica)
+        audio_play_sound(snd_musica2, 1, 1)
         escreveu = 1
         InsereTexto("Tem alguém ai?", 0)
     }

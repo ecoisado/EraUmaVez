@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_musica1",
+  "audioGroupId":{
+    "name":"agMusica",
+    "path":"audiogroups/agMusica",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":141.21797,
+  "exportDir":"",
+  "name":"snd_musica1",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"snd_musica1.mp3",
+  "volume":1.0,
+}

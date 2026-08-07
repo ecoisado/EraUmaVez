@@ -1,4 +1,5 @@
 delaySaindo = 0
+tocouAudio = 0
 
 AcabouAnim = function()
 {
@@ -51,6 +52,12 @@ Abrindo = function()
     troca_sprite(s_livro_abrindo)
     image_speed = 1
     
+    if !tocouAudio
+    {
+        tocouAudio = 1
+        audio_play_sound(snd_livro_abrindo, 0, 0)
+    }
+    
     if AcabouAnim() 
     {
         estado = Aberto
@@ -88,7 +95,7 @@ Fechando = function()
         o_penas.saindo()
     } 
     
-    show_debug_message(o_penas.y)
+    //show_debug_message(o_penas.y)
     if o_penas.y >= 86 image_speed = 1
     
     if AcabouAnim() estado = Fechado

@@ -26,8 +26,8 @@
   },
   "name":"LegendasInicio",
   "parent":{
-    "name":"EraUmaVez",
-    "path":"EraUmaVez.yyp",
+    "name":"Sequences",
+    "path":"folders/Sequences.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

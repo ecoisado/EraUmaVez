@@ -2,8 +2,8 @@
   "$GMSound":"v2",
   "%Name":"snd_legenda",
   "audioGroupId":{
-    "name":"audiogroup_default",
-    "path":"audiogroups/audiogroup_default",
+    "name":"agDigitando",
+    "path":"audiogroups/agDigitando",
   },
   "bitDepth":1,
   "channelFormat":1,

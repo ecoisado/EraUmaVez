@@ -15,7 +15,7 @@ if mouse_check_button_released(mb_left)
 
 if keyboard_check_pressed(vk_enter)
 {
-    //MostrandoImagem()
+    //trocar = 1
 }
 
 if keyboard_check_pressed(vk_escape) 
@@ -24,5 +24,11 @@ if keyboard_check_pressed(vk_escape)
     global.indice_atual = 0
     global.clicou = 0
     global.slot = ["", "", "", "", "", "", "", "", "", ""]
-    game_restart()
+    global.indice = 0
+    global.tocar = 0
+    audio_group_stop_all(agMusica)
+
+    
+    room_restart()
 }
+

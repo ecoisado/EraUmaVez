@@ -16,5 +16,9 @@ function InsereTexto(_txt = "nada", _add_indice = 0)
 
 global.slot = ["", "", "", "", "", "", "", "", "", ""]
 
-global.comecando = 0
+global.comecando = 1
 global.aberto = 0
+
+global.musicaVol = .5
+global.digitandoVol = 1
+global.sfxVol = 0.5

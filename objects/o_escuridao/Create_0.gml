@@ -4,3 +4,5 @@ image_alpha = 0
 
 escreveu = 0
 ativouBtn = 0
+
+trocar = 0

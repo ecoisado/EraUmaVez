@@ -15,12 +15,13 @@ _txt = _txt.wrap(sprite_width - _marg * 2)
 
 _txt.draw(_x, _y, typist);
 
-if keyboard_check_pressed(vk_tab) typist.skip()
+//if keyboard_check_pressed(vk_tab) typist.skip()
 
 typist.sound_per_char(snd_legenda, 1.5, 1.8)
 
 //if keyboard_check_pressed(vk_space) && global.indice_atual  < array_length(global.texto)-1 global.indice_atual++
 
+//show_debug_message(typist.get_state())
    
 if instance_exists(o_player)
 {
