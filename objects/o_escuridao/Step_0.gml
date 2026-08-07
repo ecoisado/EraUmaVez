@@ -30,4 +30,5 @@ if instance_exists(o_resposta2) && global.escolha == 0 && global.clicou
 else if instance_exists(o_resposta2) && global.escolha == 1 && global.clicou
 {
     instance_destroy(o_resposta2)
+    instance_destroy()
 }

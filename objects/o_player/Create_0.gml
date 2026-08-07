@@ -94,7 +94,7 @@ ChamandoFuncao = function()
         break
     
         case 5: 
-            
+            global.clicou = 0
             if global.slot[0] == 0
             {
                 if global.slot[1] == 0 //ele vê a garota dos seus sonhos, Meg!
@@ -105,7 +105,7 @@ ChamandoFuncao = function()
                 else //então ele acorda assustado com barulho de buzina! 
                 {
                 	o_btn_avanca.ativo = 1
-                    InsereTexto("ele olha pela janela e tudo parece normal!", 0)
+                    InsereTexto("ele olha pela janela e tudo parece normal! Então ele vai até...", 0)
                 }
             }
             else //if global.slot[1] == 1 Qual é mano? me dá outra chance!
@@ -119,6 +119,7 @@ ChamandoFuncao = function()
         break
     
         case 6: 
+            global.clicou = 0
             if global.slot[0] == 0
             {
                 if global.slot[1] == 0 //ela está na calçada, esperando o sinal fechar para atravessar para o outro lado da rua
@@ -128,17 +129,29 @@ ChamandoFuncao = function()
                 }
                 else //então ele acorda assustado com barulho de buzina!
                 {
-                    show_message("BANHEIRO / PC")
+                    MostrandoImagem("Legendas", o_banheiro)
                     //MostrandoImagem() PC / BANHEIRO  	
                 }    
                 
             }
-            else 
+            else //globalslot[0] == 1 - escuridao
             {
-                global.clicou = 0
-                o_btn_avanca.ativo = 1
-                InsereTexto("Adeus!", 1)
-                InsereTexto("...",0 )
+                if global.slot[1] == 1
+                {
+                    if global.slot[2] == 0
+                    {
+                        o_btn_avanca.ativo = 1
+                        InsereTexto("que barulho foi esse?", 0)    
+                    }
+                    else 
+                    {
+                        o_btn_avanca.ativo = 1
+                        InsereTexto("Adeus!", 1)
+                        InsereTexto("...",0 )	
+                    }
+                }
+                
+                
             }
             
         break
@@ -151,40 +164,100 @@ ChamandoFuncao = function()
                     if global.slot[2] == 0
                     {
                         o_btn_avanca.ativo = 1 
-                        InsereTexto("No momento em que atravessava a Meg vira-se para te ver...", 0)  
+                        InsereTexto("No momento em que atravessava a rua, a Meg vira-se para te ver...", 0)  
                     }    
                 }    
             }
         break
     
         case 8:
-            o_btn_avanca.ativo = 1 
-            InsereTexto("Nesse mesmo instante um carro, cujo motorista estava falando no celular, buzina e freia bruscamente..", 0)
+            if global.slot[0] == 0
+            {
+                if global.slot[1] == 0
+                {
+                    if global.slot[2] == 0
+                    {
+                        o_btn_avanca.ativo = 1 
+                        InsereTexto("Nesse mesmo instante um carro, cujo motorista estava falando no celular, buzina e freia bruscamente..", 0)
+                    }    
+                }    
+            }
+            
         break
     
         case 9:
-            o_btn_avanca.ativo = 1    
-            InsereTexto("Porém não consegue evitar a colisão com a Meg, que é arremessada no chão!", 0)  
+            if global.slot[0] == 0
+            {
+                if global.slot[1] == 0
+                {
+                    if global.slot[2] == 0
+                    {
+                        o_btn_avanca.ativo = 1    
+                        InsereTexto("Porém não consegue evitar a colisão com a Meg, que é arremessada no chão!", 0) 
+                    }    
+                }    
+            }
+             
         break
     
         case 10:
-            o_btn_avanca.ativo = 1    
-            InsereTexto("o Nosde sai de casa, correndo desesperado em direção a Meg", 0)  
+            if global.slot[0] == 0
+            {
+                if global.slot[1] == 0
+                {
+                    if global.slot[2] == 0
+                    {
+                        o_btn_avanca.ativo = 1    
+                        InsereTexto("o Nosde sai de casa, correndo desesperado em direção a Meg", 0)  
+                    }    
+                }    
+            }
+            
         break
     
         case 11:
-            o_btn_avanca.ativo = 1    
-            InsereTexto("quando chega no local do acidente, o Nosde percebe que a Meg está inconsciente, uma ambulância já foi chamada!", 0)  
+            if global.slot[0] == 0
+            {
+                if global.slot[1] == 0
+                {
+                    if global.slot[2] == 0
+                    {
+                        o_btn_avanca.ativo = 1    
+                        InsereTexto("quando chega no local do acidente, o Nosde percebe que a Meg está inconsciente, uma ambulância já foi chamada!", 0) 
+                    }    
+                }    
+            }
+             
         break
     
         case 12:
-            o_btn_avanca.ativo = 1    
-            InsereTexto("enquanto espera a ambulância, um homem que passava na calçada avisa que tem um celular tocando na casa em frente", 0)  
+            if global.slot[0] == 0
+            {
+                if global.slot[1] == 0
+                {
+                    if global.slot[2] == 0
+                    {
+                        o_btn_avanca.ativo = 1    
+                        InsereTexto("enquanto espera a ambulância, um homem que passava na calçada avisa que tem um celular tocando na casa em frente", 0) 
+                    }    
+                }    
+            }
+             
         break
     
         case 13:
-            o_btn_avanca.ativo = 1    
-            InsereTexto("o Nosde ouve o homem e percebe que é seu celular tocando", 0)  
+            if global.slot[0] == 0
+            {
+                if global.slot[1] == 0
+                {
+                    if global.slot[2] == 0
+                    {
+                        o_btn_avanca.ativo = 1    
+                        InsereTexto("o Nosde ouve o homem e percebe que é seu celular tocando", 0)
+                    }    
+                }    
+            }
+              
         break
     
         case 14:
@@ -204,12 +277,48 @@ ChamandoFuncao = function()
         case 15:
             global.clicou = 0
             o_btn_avanca.ativo = 1
-            InsereTexto("O Nosde deixa a meg aos cuidados de algumas pessoas que prestavam primeiros socorros e volta pra casa...", 0)    
+            if global.slot[0] == 0
+            {
+                if global.slot[1] == 0
+                {
+                    if global.slot[2] = 0
+                    {
+                        if global.slot[3] = 0
+                        {
+                            InsereTexto("Quando o Nosde está entrando em casa para atender o celular, ele sente um calafrio e tem a impressão de ter ouvido alguém lhe chamando!", 0)
+                        }
+                        else 
+                        {
+                        	InsereTexto("Quando a ambulância chega, o Nosde se disponibiliza para acompanhar a Meg, porém antes de entrar na ambulância, uma mulher desconhecida toca no ombro do Nosde...", 0)
+                        }
+                        
+                    }
+                }
+            } 
+             
         break
     
         case 16:
             o_btn_avanca.ativo = 1
-            InsereTexto("Quando o Nosde está entrando em casa para atender o celular, ele sente um calafrio e tem a impressão de ter ouvido alguém lhe chamando!", 0)    
+            if global.slot[0] == 0
+            {
+                if global.slot[1] == 0
+                {
+                    if global.slot[2] = 0
+                    {
+                        if global.slot[3] = 0
+                        {
+                            InsereTexto("então quando o Nosde atende a ligação, de um número desconhecido, a voz de um homem diz, não vá para o hospital com a Meg ", 0)
+                        }
+                        else 
+                        {
+                        	InsereTexto("Quando a ambulância chega, o Nosde se disponibiliza para acompanhar a Meg, porém antes de entrar na ambulância, uma mulher desconhecida toca no ombro do Nosde...", 0)
+                        }
+                        
+                    }
+                }
+            }
+                
         break
     }
 }

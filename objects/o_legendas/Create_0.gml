@@ -1,7 +1,8 @@
-global.texto = ["Era uma vez...", "Um ser que tinha entre duas escolhas pra fazer..."]
+global.texto = ["Era uma vez...", "Um ser que tinha entre [c_yellow][wave]duas[/wave][/c] escolhas pra fazer..."]
 
 scribble_anim_wave(1, .2, .2)
 scribble_anim_jitter(.8, 1.5, .1)
+scribble_anim_shake(.5, .1)
 
 typist = scribble_typist()
 typist.in(.3, .5)
