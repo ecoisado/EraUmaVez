@@ -50,15 +50,18 @@ if apertou2
     apertou2 = 0
 }
 
-
-if global.indice_atual == 100 && global.slot[8] == "" 
+if global.slot[1] == 1 && global.slot[2] == 1
 {
-    global.comecando = 0
-    audio_group_stop_all(agMusica)
-    global.indice = 0
-    global.tocar = 0
-    room_goto(RoomInicio) //TROCA O GAME_END PARA TRANSICAO PRA ROOM DO LIVRO FECHANDO!
+    if global.indice_atual == 8 && global.slot[8] == "" 
+    {
+        global.comecando = 0
+        audio_group_stop_all(agMusica)
+        global.indice = 0
+        global.tocar = 0
+        room_goto(RoomInicio) //TROCA O GAME_END PARA TRANSICAO PRA ROOM DO LIVRO FECHANDO!
+    }
 }
+
 
 
 

@@ -26,8 +26,7 @@ troca_sprite = function(_sprite = s_player)
 
 Fechado = function()
 {
-    
-    
+    tocouAudio = 0
     if position_meeting(mouse_x, mouse_y, id)
     {
         sprite_index = s_livro_fechado_selecionado
@@ -66,6 +65,7 @@ Abrindo = function()
 
 Aberto = function()
 {
+    tocouAudio = 0
     troca_sprite(s_livro_abrindo) 
     image_index = 7
     image_speed = 0 
@@ -96,7 +96,16 @@ Fechando = function()
     } 
     
     //show_debug_message(o_penas.y)
-    if o_penas.y >= 86 image_speed = 1
+    if o_penas.y >= 86 
+    {
+        image_speed = 1
+        if !tocouAudio
+        {
+            tocouAudio = 1
+            audio_play_sound(snd_livro_abrindo, 0, 0)
+        }
+        
+    }
     
     if AcabouAnim() estado = Fechado
 }
