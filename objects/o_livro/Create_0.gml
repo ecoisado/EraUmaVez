@@ -26,6 +26,7 @@ troca_sprite = function(_sprite = s_player)
 
 Fechado = function()
 {
+    global.comecando = 1
     tocouAudio = 0
     if position_meeting(mouse_x, mouse_y, id)
     {

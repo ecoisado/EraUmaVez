@@ -44,4 +44,4 @@ if global.slot[0] == 0 //luz
 } //no caso de escolher a escuridao o jogo encerra e não preenche mais slots.
 
 
-show_debug_message(global.slot)
+//show_debug_message(global.slot)

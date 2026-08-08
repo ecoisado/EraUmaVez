@@ -2,7 +2,6 @@ pos1_x = 45
 pos2_x = pos1_x + 45
 posY = 35
 
-
 MostrandoImagem = function(_layer = "Objetos", _obj = o_lampada)
 {
     if !global.clicou
@@ -146,8 +145,10 @@ ChamandoFuncao = function()
                     else 
                     {
                         o_btn_avanca.ativo = 1
-                        InsereTexto("Adeus!", 1)
+                        InsereTexto("Adeus!", 0)
                         InsereTexto("...",0 )	
+                        global.finalizando = 1
+                        global.comecando = 0
                     }
                 }
                 
@@ -289,7 +290,7 @@ ChamandoFuncao = function()
                         }
                         else 
                         {
-                        	InsereTexto("Quando a ambulância chega, o Nosde se disponibiliza para acompanhar a Meg, porém antes de entrar na ambulância, uma mulher desconhecida toca no ombro do Nosde...", 0)
+                        	InsereTexto("Quando a ambulância chega, o Nosde se disponibiliza para acompanhar a Meg, porém antes de entrar na ambulância...", 0)
                         }
                         
                     }
@@ -308,17 +309,216 @@ ChamandoFuncao = function()
                     {
                         if global.slot[3] = 0
                         {
-                            InsereTexto("então quando o Nosde atende a ligação, de um número desconhecido, a voz de um homem diz, não vá para o hospital com a Meg ", 0)
+                            InsereTexto("então quando o Nosde atende a ligação, de um número desconhecido, a voz de um homem diz, não vá para o hospital...", 0)
                         }
                         else 
                         {
-                        	InsereTexto("Quando a ambulância chega, o Nosde se disponibiliza para acompanhar a Meg, porém antes de entrar na ambulância, uma mulher desconhecida toca no ombro do Nosde...", 0)
+                        	InsereTexto("uma mulher desconhecida toca no ombro do Nosde e sussura em seu ouvido, não vá para o hospital...", 0)
                         }
                         
                     }
                 }
             }
                 
+        break
+    
+        case 17:
+            o_btn_avanca.ativo = 1
+            if global.slot[0] == 0
+            {
+                if global.slot[1] == 0
+                {
+                    if global.slot[2] = 0
+                    {
+                        if global.slot[3] = 0
+                        {
+                            InsereTexto("O Nosde não entendo o que a voz queria dizer, então ele volta até a rua para ver a meg, porém quando ele sai de casa...", 0)
+                        }
+                        else 
+                        {
+                        	InsereTexto("uma mulher desconhecida toca no ombro do Nosde e sussura em seu ouvido, não vá para o hospital...", 0)
+                        }
+                        
+                    }
+                }
+            }
+                
+        break
+    
+        case 18:
+            o_btn_avanca.ativo = 1
+            if global.slot[0] == 0
+            {
+                if global.slot[1] == 0
+                {
+                    if global.slot[2] = 0
+                    {
+                        if global.slot[3] = 0
+                        {
+                            InsereTexto("O trânsito parece normal, o Nosde pergunta para uma mulher que estava no ponto de ônibus, se ela viu a ambulância levando a Meg...", 0)
+                        }
+                        else 
+                        {
+                        	InsereTexto("uma mulher desconhecida toca no ombro do Nosde e sussura em seu ouvido, não vá para o hospital...", 0)
+                        }
+                        
+                    }
+                }
+            }
+                
+        break
+    
+        case 19:
+            o_btn_avanca.ativo = 1
+            if global.slot[0] == 0
+            {
+                if global.slot[1] == 0
+                {
+                    if global.slot[2] = 0
+                    {
+                        if global.slot[3] = 0
+                        {
+                            InsereTexto("a mulher responde que está esperando o ônibus por uns 30 minutos e não viu nenhuma ambulância ou acidente...", 0)
+                        }
+                        else 
+                        {
+                        	InsereTexto("uma mulher desconhecida toca no ombro do Nosde e sussura em seu ouvido, não vá para o hospital...", 0)
+                        }
+                        
+                    }
+                }
+            }
+                
+        break
+    
+        case 20:
+            o_btn_avanca.ativo = 1
+            if global.slot[0] == 0
+            {
+                if global.slot[1] == 0
+                {
+                    if global.slot[2] = 0
+                    {
+                        if global.slot[3] = 0
+                        {
+                            InsereTexto("o Nosde começa a se perguntar se não foi tudo uma alucinação, embora parecia muito real", 0)
+                        }
+                        else 
+                        {
+                        	InsereTexto("uma mulher desconhecida toca no ombro do Nosde e sussura em seu ouvido, não vá para o hospital...", 0)
+                        }
+                        
+                    }
+                }
+            }
+                
+        break
+    
+        case 21:
+            o_btn_avanca.ativo = 1
+            if global.slot[0] == 0
+            {
+                if global.slot[1] == 0
+                {
+                    if global.slot[2] = 0
+                    {
+                        if global.slot[3] = 0
+                        {
+                            InsereTexto("então o Nosde decide voltar pra casa. Ele pega o celular e liga pra o amigo None...", 0)
+                        }
+                        else 
+                        {
+                        	InsereTexto("uma mulher desconhecida toca no ombro do Nosde e sussura em seu ouvido, não vá para o hospital...", 0)
+                        }
+                        
+                    }
+                }
+            }
+                
+        break
+    
+        case 22:
+            o_btn_avanca.ativo = 1
+            if global.slot[0] == 0
+            {
+                if global.slot[1] == 0
+                {
+                    if global.slot[2] = 0
+                    {
+                        if global.slot[3] = 0
+                        {
+                            InsereTexto("o None lembra aos Nosde que eles só tem mais um dia para entregar o projeto do jogo que estão fazendo...", 0)
+                        }
+                        else 
+                        {
+                        	InsereTexto("uma mulher desconhecida toca no ombro do Nosde e sussura em seu ouvido, não vá para o hospital...", 0)
+                        }
+                        
+                    }
+                }
+            }
+                
+        break
+    
+        case 23:
+            o_btn_avanca.ativo = 1
+            global.clicou = 0
+            if global.slot[0] == 0
+            {
+                if global.slot[1] == 0
+                {
+                    if global.slot[2] = 0
+                    {
+                        if global.slot[3] = 0
+                        {
+                            
+                            InsereTexto("O Nosde pensa, que o dia foi bem maluco, mas volta a focar no projeto do seu Jogo.", 0)
+                            InsereTexto("Então, nossa jornada chegou ao fim!, Obrigado por vir até aqui!", 0)
+                        }
+                        else 
+                        {
+                        	InsereTexto("uma mulher desconhecida toca no ombro do Nosde e sussura em seu ouvido, não vá para o hospital...", 0)
+                        }
+                        
+                    }
+                }
+            }
+                
+        break
+    
+        case 24:
+            if global.slot[0] == 0
+            {
+                if global.slot[1] == 0
+                {
+                    if global.slot[2] == 0
+                    {
+                        if global.slot[3] == 0
+                        {
+                            o_btn_avanca.ativo = 1                            
+                        }    
+                    }    
+                }    
+            }    
+        break
+    
+        case 25:
+            if global.slot[0] == 0
+            {
+                if global.slot[1] == 0
+                {
+                    if global.slot[2] == 0
+                    {
+                        if global.slot[3] == 0
+                        {
+                            o_btn_avanca.ativo = 1
+                            InsereTexto("Adeus!", 0) 
+                            global.finalizando = 1
+                            global.comecando = 0
+                        }    
+                    }    
+                }    
+            }    
         break
     }
 }

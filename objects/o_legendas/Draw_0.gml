@@ -106,4 +106,22 @@ if instance_exists(o_player)
             o_player.ChamandoFuncao()
         });
     }
+    
+    if global.indice_atual == 24
+    {
+        //instance_destroy(o_megafone)
+        typist.function_on_complete(function (_txt, typist)
+        {
+            o_player.ChamandoFuncao()
+        });
+    }
+    
+    if global.indice_atual == 25
+    {
+        //instance_destroy(o_megafone)
+        typist.function_on_complete(function (_txt, typist)
+        {
+            o_player.ChamandoFuncao()
+        });
+    }
 }
