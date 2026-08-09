@@ -375,7 +375,7 @@ ChamandoFuncao = function()
                     if global.slot[2] == 0
                     {
                         o_btn_avanca.ativo = 1    
-                        InsereTexto("quando chega no local do acidente, o Nosde percebe que a Meg está inconsciente. Uma ambulância já foi chamada!", 0) 
+                        InsereTexto("quando chega no local do acidente, ele percebe que a Meg está inconsciente. Uma ambulância já foi chamada!", 0) 
                     }    
                 }    
             }
@@ -619,7 +619,7 @@ ChamandoFuncao = function()
                     {
                         if global.slot[3] = 0
                         {
-                            InsereTexto("O Nosde não entendo o que a voz queria dizer, então ele volta até a rua para ver a meg, porém quando ele sai de casa...", 0)
+                            InsereTexto("O Nosde não entende o que a voz queria dizer, então ele volta até a rua para ver a meg, porém quando ele sai de casa...", 0)
                         }
                         else 
                         {
