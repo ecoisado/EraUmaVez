@@ -23,3 +23,8 @@ if keyboard_check_pressed(vk_escape)
     reiniciar()
 }
 
+if keyboard_check_pressed(vk_f1)
+{
+    game_end()
+}
+

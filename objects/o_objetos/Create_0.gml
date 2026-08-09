@@ -5,6 +5,8 @@ escala_entrando = 1.3
 escala_saindo = 1
 clicou = 0
 
+
+
 PassandoMouse = function(_inclina = inclina)
 {
     if position_meeting(mouse_x, mouse_y, id)
@@ -60,6 +62,7 @@ ClicandoMouse = function(_slot = 0, _txt0 = "texto0", _txt1 = "texto1", _add_ind
             audio_play_sound(snd_pop, 0, 0)
             if image_index == 0
             {
+
                 global.clicou = 1
                 global.escolha = 0
                 escolha = 0
@@ -68,6 +71,7 @@ ClicandoMouse = function(_slot = 0, _txt0 = "texto0", _txt1 = "texto1", _add_ind
             }
             else
             {
+
                 global.clicou = 1
                 global.escolha = 1
                 escolha = 1

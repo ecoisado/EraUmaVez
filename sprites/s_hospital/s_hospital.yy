@@ -15,8 +15,8 @@
     {"$GMSpriteFrame":"v1","%Name":"7df5b494-0b48-47f7-b9d3-3b9ef459a111","name":"7df5b494-0b48-47f7-b9d3-3b9ef459a111","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"v1","%Name":"d8ac9a76-744b-4685-a109-13e5d8416777","name":"d8ac9a76-744b-4685-a109-13e5d8416777","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
-  "gridX":0,
-  "gridY":0,
+  "gridX":12,
+  "gridY":12,
   "height":24,
   "HTile":false,
   "layers":[
