@@ -10,7 +10,7 @@ desenha_slider = function()
     
     var _x_bolinha = x + (sprite_width * valor)
     
-    draw_sprite_part_ext(sprite_index, 0, 0, 0, sprite_width * valor, sprite_height, x, y - sprite_yoffset, 1, 1, c_lime, 1)
+    draw_sprite_part_ext(sprite_index, 0, 0, 0, sprite_width * valor, sprite_height, x, y - sprite_yoffset, 1, 1, #c09473, 1)
     draw_sprite_ext(s_slide_bolinha, 0, _x_bolinha, y, 1, 1, 0, cor_bolinha, 1)
     
     
@@ -27,7 +27,7 @@ altera_valor = function()
     
     if _mouse_sobre
     {
-        cor_bolinha = c_lime
+        cor_bolinha = #A53030
         if _mouse_clique
         {
             valor = (mouse_x - x) / sprite_width

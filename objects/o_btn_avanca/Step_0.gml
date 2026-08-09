@@ -40,6 +40,7 @@ if ativo
 
 if apertou
 {
+    audio_play_sound(snd_click2, 0, 0)
     //image_index = 1	
     apertou = 0
     ativo = 0
@@ -47,6 +48,7 @@ if apertou
 
 if apertou2
 {
+    audio_play_sound(snd_click, 0, 0)
     apertou2 = 0
 }
 
