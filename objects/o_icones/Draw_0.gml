@@ -4,7 +4,7 @@ if global.slot[0] == 0 // luz
 {
     if global.slot[1] != "" draw_sprite(s_cafe_icone, global.slot[1], 156, 22) //cafe/sono
 } 
-else if global.slot[0] == 1 //trevas
+else //trevas
 {
 	if global.slot[1] != "" draw_sprite(s_escolha_icone, global.slot[1], 156, 22) //sim/nao
 }   
@@ -24,7 +24,7 @@ else // trevas
 {
     if global.slot[1] == 0 // sim/nao
     {
-        if global.slot[2] != "" draw_sprite(s_escolha_icone, global.slot[2], 177, 22)  
+        if global.slot[2] != "" draw_sprite(s_celular2_icone, global.slot[2], 177, 22)  
     } 
     else 
     {
@@ -39,9 +39,29 @@ if global.slot[0] == 0 //luz
         if global.slot[2] == 0 //megafone/ir ate
         {
             if global.slot[3] != "" draw_sprite(s_celular_icone, global.slot[3], 198, 22) //celular/ambulancia
+        }
+        else 
+        {
+            //FINAL BACKROOMS    	
         }    
     }    
-} //no caso de escolher a escuridao o jogo encerra e não preenche mais slots.
+} 
+else 
+{
+    if global.slot[1] == 0 && global.slot[2] == 0
+    {
+        if global.slot[3] != "" draw_sprite(s_porta_icone, global.slot[3], 198, 22)    
+    }
+}
 
+if  global.slot[0] == 0 && global.slot[1] == 0 && global.slot[2] == 0 && global.slot[3] == 1
+{
+    if global.slot[4] != "" draw_sprite(s_seguir_icone, global.slot[4], 219, 22)    
+}
+
+if global.slot[0] == 1 && global.slot[1] == 0 && global.slot[2] == 0 && global.slot[3] == 0
+{
+    if global.slot[4] != "" draw_sprite(s_hospital_icone, global.slot[4], 219, 22)   
+}
 
 //show_debug_message(global.slot)

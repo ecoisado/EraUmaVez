@@ -1,4 +1,4 @@
-global.texto = ["Era uma vez...", "Um ser que tinha entre [c_yellow][wave]duas[/wave][/c] escolhas pra fazer..."]
+global.texto = ["Era uma vez..."]
 
 scribble_anim_wave(1, .2, .2)
 scribble_anim_jitter(.8, 1.5, .1)
