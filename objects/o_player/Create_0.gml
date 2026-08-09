@@ -324,7 +324,7 @@ ChamandoFuncao = function()
                 if global.slot[1] == 1 && global.slot[2] = 0
                 {
                     o_btn_avanca.ativo = 1
-                    InsereTexto("e então todas as noites em claro, e falando para a namorada, só mais uns minutinhos antes de ir deitar-se valeram a pena!", 0)    
+                    InsereTexto("e então todas as noites em claro, e falando para a namorada, só mais uns minutinhos, antes de ir deitar-se valeram a pena!", 0)    
                 }	
             
             }
