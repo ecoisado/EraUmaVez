@@ -4,6 +4,10 @@ inclina = 0
 escala_entrando = 1.3
 escala_saindo = 1
 clicou = 0
+nome = ""
+nome0 = "0"
+nome1 = "1"
+
 
 
 
@@ -71,7 +75,6 @@ ClicandoMouse = function(_slot = 0, _txt0 = "texto0", _txt1 = "texto1", _add_ind
             }
             else
             {
-
                 global.clicou = 1
                 global.escolha = 1
                 escolha = 1

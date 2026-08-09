@@ -10,8 +10,17 @@ MostrandoImagem = function(_layer = "Objetos", _obj = o_lampada)
     {
         var _lamp = instance_create_layer(pos1_x, posY, _layer, _obj)
         _lamp.image_index = 0 
+        if instance_exists(_obj)
+        {
+            _lamp.nome = _lamp.nome0
+        }
+        
         _lamp = instance_create_layer(pos2_x, posY, _layer, _obj)
         _lamp.image_index = 1
+        if instance_exists(_obj)
+        {
+            _lamp.nome = _lamp.nome1
+        }
     }
 }
 
@@ -66,13 +75,13 @@ ChamandoFuncao = function()
                 {
                     //if global.slot[1] == 0 O nosde que é um viciado em café saboreia esse momento enquanto olha pela janela da sua casa...
                     o_btn_avanca.ativo = 1
-                    InsereTexto("ele vê a garota dos seus sonhos, Meg!", 0)  
+                    InsereTexto("ele vê a garota dos seus [wave]sonhos[/wave], Meg!", 0)  
                 }
                 else 
                 {
                 	//if global.slot[1] == 1 O Nosde decide tirar mais uns 5 minutinhos de sono
                     o_btn_avanca.ativo = 1
-                    InsereTexto("então ele acorda assustado com barulho de buzina!", 0)
+                    InsereTexto("então ele acorda [jitter]assustado[/jitter] com barulho de buzina!", 0)
                 }
                 
             }
